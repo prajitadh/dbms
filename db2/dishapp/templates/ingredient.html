@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingredients</title>
+</head>
+<body>
+    <centre>
+        <h1>Enter Ingredients</h1>
+        <form name="About Ingredients" method="post" action="../insertIngredient/">
+            {% csrf_token %}
+            <pre>
+            ingredients: <input type="text" name="tiname" value="" width="250"><br>
+            quantity:<input type="number" name="tiqua" value="" width="200"><br>
+            recipe_id:<input type="number" name="tidish" value="" width="200"><br>
+            
+            <input type="submit" name="ingredients" value="click to add" width="300" height="100">
+            </pre>
+        </form>
+        
+    </centre>
+</body>
+</html>

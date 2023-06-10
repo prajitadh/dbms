@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+</head>
+<body>
+    <centre>
+        <h1>Enter Recipes</h1>
+        <form name="About Recipes" method="post" action="../insertRecipe/">
+            {% csrf_token %}
+            <pre>
+            dish_name:<input type="text" name="tdish" value="" width="200"><br>
+            recipe_name: <input type="text" name="trname" value="" width="200"><br>
+            description:<input type="text" name="tdesc" value="" width="200"><br>
+            instruction: <input type="text" name="tinst" value="" width="200"><br>
+            
+
+            <input type="submit" name="rescipe" value="click to add" width="300" height="100">
+            </pre>
+        </form>
+        
+    </centre>
+</body>
+</html>

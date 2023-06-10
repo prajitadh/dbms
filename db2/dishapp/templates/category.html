@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+</head>
+<body>
+    <centre>
+        <h1>Enter Categories</h1>
+        <form name="About Categories" method="post" action="../insertCategory/">
+            {% csrf_token %}
+            <pre>
+            category:<input type="text" name="tcat" value="" width="200"><br>
+            dish_id:<input type="text" name="tcdish" value="" width="500"><br>
+            
+            <input type="submit" name="category" value="click here" width="200" height="100">
+            </pre>
+        </form>
+        
+    </centre>
+</body>
+</html>
